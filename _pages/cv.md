@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Computer Science, Texas A&M University, 2033 (expected)
+* M.S. in Computer Science, Florida State University, 2028
+* B.S. in Computer Science, Florida State University, 2026
 
 Work experience
 ======
@@ -22,15 +22,15 @@ Work experience
   * Duties includes: Updates and improvements to template
   * Supervisor: The Users
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Fall 2025: Research Assistant
+  * Florida State University
+  * Duties included: Research on LLM Model Extraction Attack
+  * Supervisor: Dr. Yushun Dong
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2025: Research Assistant
+  * Florida State University
+  * Duties included: Assembly Optimizer
+  * Supervisor: Dr. David Whalley
   
 Skills
 ======
@@ -47,12 +47,6 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
@@ -61,4 +55,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 3 different slack teams
