@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kien Le</title>
+  <meta name="description" content="Kien Le is an M.S. student in Computer Science at Florida State University working on trustworthy AI: security, privacy, and reliability of machine learning systems.">
+  <link rel="canonical" href="https://kienle1404.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kien Le">
+  <meta property="og:description" content="M.S. student in Computer Science at Florida State University working on trustworthy AI.">
+  <meta property="og:url" content="https://kienle1404.github.io/">
+  <!-- TODO: once you have a headshot, uncomment so links show your photo
+  <meta property="og:image" content="https://kienle1404.github.io/images/profile.jpg">
+  -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply saved theme (or system theme) before the page draws, to avoid a flash.
+    (function () {
+      var saved = localStorage.getItem("theme");
+      var system = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", saved || system);
+    })();
+  </script>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a class="site-name" href="#">Kien Le</a>
+    <div class="nav">
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#research">Research</a>
+      <a href="files/cv.pdf">CV</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ HEADER ============ -->
+  <header class="profile">
+    <!-- TODO: replace with your headshot, e.g. images/profile.jpg (square, ~400x400) -->
+    <img class="photo" src="images/profile.svg" alt="Photo of Kien Le">
+    <div>
+      <h1>Kien Le</h1>
+      <p class="role">M.S. Student in Computer Science<br>Florida State University</p>
+      <p class="links">
+        <a href="mailto:lekien140405@gmail.com">Email</a>
+        <!-- TODO: add your Google Scholar profile URL, then remove the comment markers
+        <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a>
+        -->
+        <a href="https://github.com/kienle1404">GitHub</a>
+        <a href="https://www.linkedin.com/in/kienle414/">LinkedIn</a>
+        <a href="https://orcid.org/0009-0000-4850-9832">ORCID</a>
+        <a href="files/cv.pdf">CV</a>
+      </p>
+    </div>
+  </header>
+
+  <!-- ============ BIO ============ -->
+  <section id="about">
+    <!-- TODO: sharpen the first sentence into your one-line research pitch -->
+    <p>
+      I am an M.S. student in Computer Science at Florida State University, where I also
+      received my B.S. (Honors). My research interests lie in <strong>trustworthy AI</strong>:
+      understanding how machine learning systems can be attacked, and building them to be
+      secure, private, and efficient.
+    </p>
+    <p>
+      I currently work with <a href="https://www.iiilab.org/home">Dr. Tuy Nguyen</a> on
+      privacy-preserving federated learning for healthcare. Previously, I worked with
+      <a href="https://yushundong.github.io/">Dr. Yushun Dong</a> on model extraction attacks
+      against large language models and graph neural networks, and with
+      <a href="https://www.cs.fsu.edu/~whalley/">Dr. David Whalley</a> on compiler backend optimization.
+    </p>
+  </section>
+
+  <!-- ============ NEWS ============ -->
+  <!-- To add news: copy one <li> to the top of the list.
+       Only the newest 5 are shown; older ones collapse behind a button automatically. -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news" id="news-list">
+      <!-- TODO: add MWSCAS 2026 paper status, M.S. start, any new submissions -->
+      <li><span class="date">Jan 2026</span> Joined Dr. Tuy Nguyen's <a href="https://www.iiilab.org/home">iiiLab</a> as a research assistant.</li>
+      <li><span class="date">Nov 2025</span> Our paper on query-efficient knowledge stealing from LLMs was accepted to <strong>AAAI 2026</strong>.</li> <!-- TODO: verify month -->
+      <li><span class="date">Sep 2025</span> Won 2nd place in the Waymo track at ShellHacks 2025.</li> <!-- TODO: verify month -->
+      <li><span class="date">2025</span> Contributed an implementation of GNNFingers to the open-source <a href="https://labrai.github.io/PyGIP/">PyGIP</a> library.</li>
+    </ul>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <!-- To add a paper: copy one <li class="pub"> block. -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul class="pubs">
+      <!-- TODO: MWSCAS 2026 paper
+      <li class="pub">
+        <span class="badge">MWSCAS'26</span>
+        <div>
+          <div class="pub-title">PAPER TITLE</div>
+          <div class="pub-authors">AUTHORS, <strong>Kien Le</strong>, ...</div>
+          <div class="pub-venue"><em>IEEE International Midwest Symposium on Circuits and Systems (MWSCAS)</em>, 2026</div>
+          <div class="pub-links"><a href="#">PDF</a></div>
+        </div>
+      </li>
+      -->
+      <li class="pub">
+        <span class="badge">AAAI'26</span>
+        <div>
+          <div class="pub-title">Query-Efficient Domain Knowledge Stealing Against Large Language Models</div>
+          <div class="pub-authors">Zhengao Li, Xiaopeng Yuan, Bolin Shen, <strong>Kien Le</strong>, Haohan Wang, Xugui Zhou, Shangqian Gao, Yushun Dong</div>
+          <div class="pub-venue"><em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2026</div>
+          <!-- TODO: add real PDF / code links, then remove the comment markers
+          <div class="pub-links"><a href="#">PDF</a> <a href="#">Code</a></div>
+          -->
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ RESEARCH EXPERIENCE ============ -->
+  <section id="research">
+    <h2>Research Experience</h2>
+    <div class="entry">
+      <div class="entry-head"><strong>ML for Smart Healthcare</strong> <span class="date">Jan 2026 – Present</span></div>
+      <div class="entry-sub">Research Assistant, advised by <a href="https://www.iiilab.org/home">Dr. Tuy Nguyen</a></div>
+      <p>Dual-attention transformers for personalized federated learning in ECG classification, improving accuracy while preserving patient privacy.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-head"><strong>Compiler Optimization</strong> <span class="date">Jul 2025 – Jan 2026</span></div>
+      <div class="entry-sub">Research Assistant, advised by <a href="https://www.cs.fsu.edu/~whalley/">Dr. David Whalley</a></div>
+      <p>Backend optimizations in the Very Portable Optimizer (VPO): copy propagation, branch chaining, and tail duplication.</p>
+    </div>
+    <div class="entry">
+      <div class="entry-head"><strong>Large Language Model Security</strong> <span class="date">Mar 2025 – Dec 2025</span></div>
+      <div class="entry-sub">Researcher, advised by <a href="https://yushundong.github.io/">Dr. Yushun Dong</a></div>
+      <p>Query-efficient attacks that extract domain knowledge from black-box LLMs using adaptive, uncertainty-guided querying (AAAI 2026).</p>
+    </div>
+    <div class="entry">
+      <div class="entry-head"><strong>Graph Neural Network Security</strong> <span class="date">Aug 2024 – Apr 2025</span></div>
+      <div class="entry-sub">Researcher, advised by <a href="https://yushundong.github.io/">Dr. Yushun Dong</a></div>
+      <p>Model extraction and ownership verification attacks on GNNs (GraphSAGE, GIN) with PyTorch Geometric.</p>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects">
+    <h2>Projects &amp; Open Source</h2>
+    <div class="entry">
+      <div class="entry-head"><strong>GNNFingers in PyGIP</strong> <span class="date"><a href="https://labrai.github.io/PyGIP/">PyGIP</a></span></div>
+      <p>Open-source implementation of <a href="https://dl.acm.org/doi/abs/10.1145/3589334.3645489">GNNFingers</a>, a fingerprinting framework for verifying ownership of graph neural networks, contributed with documentation to the PyGIP library for GNN security research.</p>
+    </div>
+  </section>
+
+  <!-- ============ HONORS ============ -->
+  <section id="honors">
+    <h2>Honors &amp; Awards</h2>
+    <ul class="news">
+      <li><span class="date">2025</span> 2nd Place, ShellHacks (Waymo track)</li>
+      <li><span class="date">2024</span> 1st Place, FSU ACM Programming Contest (Upper Division)</li>
+      <li><span class="date">2023–2025</span> President's List and Dean's List, Florida State University</li>
+    </ul>
+  </section>
+
+  <!-- ============ TEACHING ============ -->
+  <section id="teaching">
+    <h2>Teaching &amp; Mentoring</h2>
+    <ul class="news">
+      <li><span class="date">2024–Present</span> Academic Tutor in computer science and mathematics, <a href="https://ace.fsu.edu/">FSU Academic Center for Excellence</a></li>
+      <li><span class="date">Fall 2024</span> Honors Colloquium Leader, FSU Honors Program</li>
+    </ul>
+  </section>
+
+  <footer>Last updated: October 2026</footer>
+
+</main>
+
+<script>
+  document.getElementById("theme-toggle").addEventListener("click", function () {
+    var root = document.documentElement;
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+  });
+
+  // Collapse older news: show the newest NEWS_SHOWN items, hide the rest behind a button.
+  (function () {
+    var NEWS_SHOWN = 5;
+    var list = document.getElementById("news-list");
+    var older = Array.prototype.slice.call(list.children, NEWS_SHOWN);
+    if (older.length === 0) return;
+    older.forEach(function (li) { li.hidden = true; });
+    var button = document.createElement("button");
+    button.type = "button";
+    button.className = "more-button";
+    button.textContent = "Show older news (" + older.length + ")";
+    button.addEventListener("click", function () {
+      var expanding = older[0].hidden;
+      older.forEach(function (li) { li.hidden = !expanding; });
+      button.textContent = expanding ? "Show less" : "Show older news (" + older.length + ")";
+    });
+    list.after(button);
+  })();
+</script>
+</body>
+</html>
